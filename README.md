@@ -7,3 +7,5 @@ The source of this data is from the website https://data.louisvilleky.gov/datase
 I chose this topic because officers are currently working in one of the most hostile and stressful environments in the history of law enforcement. Using data and information to determine scenarios where officers are more likely to be assaulted may help reduce these incidents in the future. This can also lead to better training and/or a change in tactics regarding certain factors that increase likelihood of an assault on officers. Changing these tactics can increase officer safety. 
 
 The main questions to be answered by this project are: What factors lead to assaults against officers? What are the most dangerous scenarios for officers? Can we predict assaults against officers?
+
+Since this is a solo project, I will not need communication protocols or individual branches.
