@@ -1,2 +1,3 @@
 # Assaulted_Officers
-Assessing factors in officers who were assaulted in the Louisville Metro Police Department, Kentucky from 2010-Present
+
+This project will help predict and identify factors that may contribute to the assault of police officers. 
