@@ -8,10 +8,12 @@ I chose this topic because officers are currently working in one of the most hos
 
 The main questions to be answered by this project are: What factors lead to assaults against officers? What are the most dangerous scenarios for officers? Can we predict assaults against officers?
 
-Since this is a solo project, I will not need communication protocols or individual branches.
-
 I imported the raw data files to jupyter notebook and used pandas to drop irrelevant columns and filter dataframes. I then exported these dataframes as csv files.
 
 Next, I imported these csv files into tables I created in PostgreSQL. I then joined these tables on the incident number and exported this file as a csv file. Using Excel, I sorted and filtered the data and added a column that put a '1' if an officer was attacked during the encounter and a '0' if the officer was not attacked. I removed null values and reduced the number of columns for relevance. 
 
-Finally, I imported this csv file into jupyter notebook to begin the machine learning model. I used pandas get_dummies package to encode the categories into binary labels. I used the newly created officer attacked column as the target variable and the rest of the dataframe as the features. I trained, scaled, and fit the data. I used RandomForestClassifier to predict features that may lead to officer attacks. 
+Finally, I imported this csv file into jupyter notebook to begin the machine learning model. I used pandas get_dummies package to encode the categories into binary labels. I used the newly created officer attacked column as the target variable and the rest of the dataframe as the features. I trained and resampled the data with SMOTE. This oversampled the assaulted officers data in order to predict assaults accurately. The balanced accuracy score of the SMOTE model was over 90% with a 0.95 f1 score. However, the precision score of the assaulted officer predictions was only 0.27. Therefore, the model is not great at predicting when officers will be attacked but is excellent at predicting when officers will not be assaulted. 
+
+Link to presentation slides: https://docs.google.com/presentation/d/1--v6UNDhjtPhDgON7yDDuh8yEOWAh3PCToknc0l_FGI/edit#slide=id.gf2de9b5a50_0_142
+
+Link to Tableau dashboard: https://public.tableau.com/app/profile/nathan5690/viz/LMPDOfficerAssaults/Story1?publish=yes
