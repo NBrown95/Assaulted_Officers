@@ -1,4 +1,4 @@
-# Assaulted_Officers
+# Assaulted Officers
 
 This project will help predict and identify factors that may contribute to the assault of police officers. 
 
@@ -14,6 +14,12 @@ Next, I imported these csv files into tables I created in PostgreSQL. I then joi
 
 Finally, I imported this csv file into jupyter notebook to begin the machine learning model. I used pandas get_dummies package to encode the categories into binary labels. I used the newly created officer attacked column as the target variable and the rest of the dataframe as the features. I trained and resampled the data with SMOTE. This oversampled the assaulted officers data in order to predict assaults accurately. The balanced accuracy score of the SMOTE model was over 90% with a 0.95 f1 score. However, the precision score of the assaulted officer predictions was only 0.27. Therefore, the model is not great at predicting when officers will be attacked but is excellent at predicting when officers will not be assaulted. 
 
-Link to presentation slides: https://docs.google.com/presentation/d/1--v6UNDhjtPhDgON7yDDuh8yEOWAh3PCToknc0l_FGI/edit#slide=id.gf2de9b5a50_0_142
+## Key Findings
+
+* 11% of assaults on highways, roads, and alleys end with an assaulted officer
+* 32% of assaults that are classified as “Menacing” result in an assaulted officer
+* Jails, roads, and drug stores are locations with highest coefficients relating to assaulted officers
+
+Link to presentation slides: https://docs.google.com/presentation/d/1--v6UNDhjtPhDgON7yDDuh8yEOWAh3PCToknc0l_FGI/edit#slide=id.p
 
 Link to Tableau dashboard: https://public.tableau.com/app/profile/nathan5690/viz/LMPDOfficerAssaults/Story1?publish=yes
